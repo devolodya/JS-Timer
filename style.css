@@ -1,35 +1,56 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #111;
     color: white;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
 }
-#timer{
-    position: absolute;
-    height: 100px;
-    width: 300px;
+
+#timer {
+    margin-top: 150px;
+    margin-left: 250px;
+    display: flex;
+    height: 300px;
+    width: 800px;
     font-size: 50px;
-    margin-top: auto;
-    margin-left: 50%;
     background-color: red;
     line-height: 100px;
+    border-radius: 20px;
 }
 .timerEl{
-    float: left;
-    margin-right: 20px;
+    margin-left: 4px;
 }
-.timerEl:first-of-type{
-    margin-left: 20px;
+#digits {
+    margin: auto;
+    background-color: #111;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
 }
-.but{
+
+#buttons {
+    margin: auto;
+}
+
+.but {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     height: 30px;
     width: 80px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
-.but:hover{
+
+.but:first-of-type {
+    margin-top: 0;
+}
+
+.but:hover {
     background-color: #2f8deb;
 }
