@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -7,15 +8,23 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <title>Timer</title>
 </head>
+
 <body>
     <div id="timer">
-        <div id="hours" class="timerEl">00</div>
-        <div id="minutes"class="timerEl">00</div>
-        <div id="seconds" class="timerEl">00</div>
-        <button id="start" class="but">Start</button>
-        <button id="stop" class="but">Stop</button>
-        <button id="pause" class="but">Pause</button>
+        <div id="digits">
+            <span id="hours" class="timerEl">00</span>
+            <span>:</span>
+            <span id="minutes" class="timerEl">00</span>
+            <span>:</span>
+            <span id="seconds" class="timerEl">00</span>
+        </div>
+        <div id="buttons">
+            <button id="start" class="but">Start</button>
+            <button id="stop" class="but">Stop</button>
+            <button id="pause" class="but">Pause</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,5 @@
-const start = document.getElementById("start");
-const seconds = document.getElementById("seconds");
+const start = document.querySelector("#start");
+const seconds = document.querySelector("#seconds");
 const minutes = document.querySelector("#minutes");
 const pause = document.querySelector("#pause");
 const stop = document.querySelector("#stop");
@@ -16,33 +16,27 @@ const counterWork = () => {
     seconds.innerHTML = `0${s}`;
     minutes.innerHTML=`0${m}`;
     hours.innerHTML=`0${h}`;
-    console.log('cycle 1');
   }
   if (s>=10 && s<=59) {
     seconds.innerHTML = s;
-    console.log('cycle 2');
   }
   if (s >59) {
     s = 0;
     seconds.innerHTML='00';
     m++;
     minutes.innerHTML = `0${m}`;
-    console.log('cycle 3');
   }
   if(m>=10 && m <=59){
     minutes.innerHTML=m;
-    console.log('cycle 4');
   }
   if (m >59) {
     m = 0;
     minutes.innerHTML='00';
     h++;
     hours.innerHTML = `0${h}`;
-    console.log('cycle 3');
   }
   if(h>=10){
     hours.innerHTML=h;
-    console.log('cycle 5');
   }
   s++;
 };
